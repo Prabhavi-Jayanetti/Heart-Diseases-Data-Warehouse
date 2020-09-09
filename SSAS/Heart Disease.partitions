@@ -1,0 +1,125 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="1a1f13e2-25ac-4f54-a3d0-9583eacbf597" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Heart Disease</ID>
+  <MeasureGroups>
+    <MeasureGroup>
+      <ID>Heart Diseases</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="935e1eee-7407-462b-a068-2a880738a2fe">
+          <ID>Heart Diseases</ID>
+          <Name>Heart Diseases</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="d25da1ec-fab0-4d49-bec3-6e08b303372e">
+            <DataSourceViewID>Heart Disease</DataSourceViewID>
+            <TableID>dbo_Heart_Diseases</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Dimdoctor</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="9db6aba0-fc56-426e-a1e6-b2f0a086e45e">
+          <ID>Dimdoctor</ID>
+          <Name>Dimdoctor</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="ec4c8215-3c37-46a4-99dc-4c202a06c972">
+            <DataSourceViewID>Heart Disease</DataSourceViewID>
+            <TableID>dbo_dimdoctor</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Dimdiseases</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="21f0339d-414e-41c0-baa4-378f82e119cb">
+          <ID>Dimdiseases</ID>
+          <Name>Dimdiseases</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="e922b54b-dd0b-46a5-a678-8b59ce5813e8">
+            <DataSourceViewID>Heart Disease</DataSourceViewID>
+            <TableID>dbo_dimdiseases</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Dimpatient</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="244fe6e9-1c20-443e-91e9-4d1d59d6bb95">
+          <ID>Dimpatient</ID>
+          <Name>Dimpatient</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="cc77ea2d-c5f8-4e20-96d3-6384928b227b">
+            <DataSourceViewID>Heart Disease</DataSourceViewID>
+            <TableID>dbo_dimpatient</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Dim BMI</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="755a24b4-38b2-460f-8196-400de3e2a897">
+          <ID>Dim BMI</ID>
+          <Name>Dim BMI</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="2c6bf8b1-6187-4bce-8cca-bc5b13094889">
+            <DataSourceViewID>Heart Disease</DataSourceViewID>
+            <TableID>dbo_dimBMI</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Dimward</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="0d2ac0c8-fb55-488e-9e0c-fb23d04cf682">
+          <ID>Dimward</ID>
+          <Name>Dimward</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="3d47c4ca-040d-46f2-8104-d847dec7c533">
+            <DataSourceViewID>Heart Disease</DataSourceViewID>
+            <TableID>dbo_dimward</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+  </MeasureGroups>
+</Cube>
